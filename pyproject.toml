@@ -1,0 +1,18 @@
+[project]
+name = "thumbnail-adder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp==3.9.3",
+    "kurigram",
+    "motor==3.5.1",
+    "pyromod==3.1.6",
+    "python-dotenv==1.0.1",
+    "tgcrypto==1.2.3",
+    "uvloop>=0.21.0 ; sys_platform != 'win32'",
+]
+
+[tool.uv.sources]
+kurigram = { git = "https://github.com/KurimuzonAkuma/pyrogram", rev = "5c5bde94ce3dac20da1590cb33d97ad20c0a8068" }
